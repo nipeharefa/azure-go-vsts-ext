@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+  "id": "3a64e70e-b37c-4a99-b8f2-42b1adc81955",
+  "name": "GoGooseInstaller",
+  "friendlyName": "Goose installer",
+  "description": "Find in cache or download Goose",
+  "helpMarkDown": "",
+  "category": "Azure Pipelines",
+  "author": "nipeharefa@gmail.com",
+  "version": {
+    "Major": 0,
+    "Minor": 0,
+    "Patch": 6
+  },
+  "instanceNameFormat": "Install Goose $(version)",
+  "inputs": [
+    {
+      "name": "version",
+      "type": "string",
+      "label": "Version",
+      "defaultValue": "v3.7.0",
+      "required": true,
+    }
+  ],
+  "execution": {
+    "Node10": {
+        "target": "index.js"
+    }
+  }
+}

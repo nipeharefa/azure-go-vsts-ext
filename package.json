@@ -1,0 +1,16 @@
+{
+  "name": "azure-go-vsts-ext",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:nipeharefa/azure-go-vsts-ext.git",
+  "author": "<nipeharefa@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "task": "node tasksfile.js",
+    "debug": "node --nolazy --inspect-brk=9229 tasksfile.js"
+  },
+  "devDependencies": {
+    "tasksfile": "^5.1.1",
+    "tfx-cli": "^0.12.0"
+  }
+}

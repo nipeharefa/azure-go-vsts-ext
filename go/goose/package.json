@@ -1,0 +1,9 @@
+{
+  "name": "goose",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "vss-web-extension-sdk": "^5.141.0"
+  }
+}

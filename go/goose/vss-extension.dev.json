@@ -1,0 +1,34 @@
+{
+  "manifestVersion": 1,
+  "id": "go-goose-tasks-dev",
+  "publisher": "gowi",
+  "version": "0.0.15",
+  "name": "Goose (Development)",
+  "description": "A sample Visual Studio Services extension",
+  "public": false,
+  "categories": [
+    "Azure Pipelines"
+  ],
+  "targets": [
+      {
+        "id": "Microsoft.VisualStudio.Services"
+      }
+  ],
+  "contributions": [
+    {
+      "id": "goose-installer",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+          "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+          "name": "tasks/goose-installer"
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "tasks/goose-installer"
+    }
+  ]
+}

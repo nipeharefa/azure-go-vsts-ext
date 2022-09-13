@@ -1,0 +1,8 @@
+node_modules
+packages
+debug
+
+
+# index.js
+**/tasks/**/*.js
+x64/
